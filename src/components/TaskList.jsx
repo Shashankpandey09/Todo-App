@@ -26,7 +26,7 @@ function TaskList() {
         <option value="completed">Completed</option>
         <option value="incomplete">Incomplete</option>
       </select>
-      <ol className="mt-2 space-y-4">
+      <ol className="mt-2 space-y-4 w-full">
         {/* Filter tasks based on selected filter value */}
         {todos
           .filter((todo) => {
@@ -44,7 +44,7 @@ function TaskList() {
               <div className="flex items-center">
                 <input
                   type="checkbox"
-                  className="h-4 w-4 mr-2"
+                  className="h-4 w-4 md:mr-2 mr-0"
                   checked={todo.complete}
                   onChange={() => dispatch(taskCompleted(todo.id))}
                 />

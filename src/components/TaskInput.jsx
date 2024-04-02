@@ -27,10 +27,10 @@ function TaskInput() {
             value={task}
             onChange={(e) => setTask(e.target.value)} // Update task state on input change
             placeholder="Add a new task..."
-            className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none font-semibold text-lg" // Apply font styling
+            className="appearance-none bg-transparent border-none w-full md:mr-0 text-sm text-white  py-1 px-2 leading-tight focus:outline-none font-semibold md:text-lg" // Apply font styling
           />
           {/* Add Task button */}
-          <button type="submit" className="flex-shrink-0 bg-blue-500 hover:bg-blue-700 text-sm text-white py-2 px-4 rounded font-semibold">
+          <button type="submit" className="flex-shrink-0 bg-blue-500 hover:bg-blue-700 text-sm text-white py-2 md:px-4 px-1 rounded font-semibold">
             Add Task
           </button>
         </div>
