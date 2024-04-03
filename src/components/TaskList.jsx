@@ -38,9 +38,9 @@ function TaskList() {
           .map((todo, index) => (
             <li key={todo.id} className="flex items-center justify-between bg-white shadow-md rounded-md p-4">
               {/* Styled span element */}
-              <span className={`${todo.complete ? 'line-through text-red-500' : 'text-gray-800'} capitalize font-semibold`}>
-                {index + 1}.{todo.task}
-              </span>
+              <span className={`${todo.complete ? 'line-through text-green-400' : 'text-gray-800'} capitalize font-semibold`}>
+                {index + 1}. {todo.task}
+              </span> 
               <div className="flex items-center">
                 <input
                   type="checkbox"
